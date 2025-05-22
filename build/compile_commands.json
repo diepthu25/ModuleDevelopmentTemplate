@@ -1,0 +1,38 @@
+[
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt_module.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt_module.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt_module.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt_module.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/main.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/main.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/main.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/main.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj"
+}
+]
