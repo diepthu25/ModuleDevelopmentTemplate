@@ -250,6 +250,54 @@ src/modules/ModuleB/moduleB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.s
 .PHONY : src/modules/ModuleB/moduleB.cpp.s
 
+src/modules/Resources/GPSResource/GPSResource.obj: src/modules/Resources/GPSResource/GPSResource.cpp.obj
+.PHONY : src/modules/Resources/GPSResource/GPSResource.obj
+
+# target to build an object file
+src/modules/Resources/GPSResource/GPSResource.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj
+.PHONY : src/modules/Resources/GPSResource/GPSResource.cpp.obj
+
+src/modules/Resources/GPSResource/GPSResource.i: src/modules/Resources/GPSResource/GPSResource.cpp.i
+.PHONY : src/modules/Resources/GPSResource/GPSResource.i
+
+# target to preprocess a source file
+src/modules/Resources/GPSResource/GPSResource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.i
+.PHONY : src/modules/Resources/GPSResource/GPSResource.cpp.i
+
+src/modules/Resources/GPSResource/GPSResource.s: src/modules/Resources/GPSResource/GPSResource.cpp.s
+.PHONY : src/modules/Resources/GPSResource/GPSResource.s
+
+# target to generate assembly for a file
+src/modules/Resources/GPSResource/GPSResource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.s
+.PHONY : src/modules/Resources/GPSResource/GPSResource.cpp.s
+
+src/modules/Resources/SubsystemResource/SubsystemResource.obj: src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj
+.PHONY : src/modules/Resources/SubsystemResource/SubsystemResource.obj
+
+# target to build an object file
+src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj
+.PHONY : src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj
+
+src/modules/Resources/SubsystemResource/SubsystemResource.i: src/modules/Resources/SubsystemResource/SubsystemResource.cpp.i
+.PHONY : src/modules/Resources/SubsystemResource/SubsystemResource.i
+
+# target to preprocess a source file
+src/modules/Resources/SubsystemResource/SubsystemResource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.i
+.PHONY : src/modules/Resources/SubsystemResource/SubsystemResource.cpp.i
+
+src/modules/Resources/SubsystemResource/SubsystemResource.s: src/modules/Resources/SubsystemResource/SubsystemResource.cpp.s
+.PHONY : src/modules/Resources/SubsystemResource/SubsystemResource.s
+
+# target to generate assembly for a file
+src/modules/Resources/SubsystemResource/SubsystemResource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.s
+.PHONY : src/modules/Resources/SubsystemResource/SubsystemResource.cpp.s
+
 src/utils/Logger.obj: src/utils/Logger.cpp.obj
 .PHONY : src/utils/Logger.obj
 
@@ -298,6 +346,12 @@ help:
 	@echo "... src/modules/ModuleB/moduleB.obj"
 	@echo "... src/modules/ModuleB/moduleB.i"
 	@echo "... src/modules/ModuleB/moduleB.s"
+	@echo "... src/modules/Resources/GPSResource/GPSResource.obj"
+	@echo "... src/modules/Resources/GPSResource/GPSResource.i"
+	@echo "... src/modules/Resources/GPSResource/GPSResource.s"
+	@echo "... src/modules/Resources/SubsystemResource/SubsystemResource.obj"
+	@echo "... src/modules/Resources/SubsystemResource/SubsystemResource.i"
+	@echo "... src/modules/Resources/SubsystemResource/SubsystemResource.s"
 	@echo "... src/utils/Logger.obj"
 	@echo "... src/utils/Logger.i"
 	@echo "... src/utils/Logger.s"

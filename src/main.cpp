@@ -65,6 +65,14 @@ void HandleModuleCleanup(const ModuleID& mod_id, const std::string& reason) {
 
 
 int main(){
+    /*
+    
+    int a, b;
+    std::cin >> a >> b;
+    int c = a + b;
+    std::cout << "Result: " << c << std::endl;
+    
+    */
     // std::cout << "Hello, World!" << std::endl;
     // First initialize the logger
     SystemLogger::initialize("modules_test.log");
@@ -78,16 +86,17 @@ int main(){
     // 1. Initialize VisionRT (Construct VisionRT)
     // 2. Register modules
     // 3. Register resources
-    // 4. Main loop
-    // 5. Cleanup
-    // 6. Exit
+    // 4. Invoke module
+    // 5. Main loop
+    // 6. Cleanup
+    // 7. Exit
 
     // Initialize VisionRT
     g_vision_rt_manager = std::make_unique<VisionRT>();
 
     // Create ModuleA & ModuleB instance then
     // Register ModuleA & B to VisionRT
-    auto mA = std::make_shared<ModuleA>("ModuleA", "v1.0.0");
+    auto mA = std::make_shared<ModuleA>("ModuleA", "v1.0.0"); // new ModuleA() | std::make_shared<ten module>("ModuleA" <- ID module);
     auto mB = std::make_shared<ModuleB>("ModuleB", "v1.0.0");
 
     SystemLogger::info("MainApp", "All module loaded. Pending registration.");
@@ -121,14 +130,14 @@ int main(){
     }
 
     // Invoke the modules
-    if(g_vision_rt_manager->InvokeModule("ModuleA")){
+    if(g_vision_rt_manager->InvokeModule("ModuleA")){ // -> tạo thread life-cycle setup loop exit
         SystemLogger::info("MainApp", "ModuleA invoked successfully.");
     }
     if(g_vision_rt_manager->InvokeModule("ModuleB")){
         SystemLogger::info("MainApp", "ModuleA invoked successfully.");
     }
 
-    while (!g_shutdown_flag.load(std::memory_order_relaxed)) {
+    while (!g_shutdown_flag.load(std::memory_order_relaxed)) { // Giữ cho main luôn chạy -> không bị dừng
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
         if(g_vision_rt_manager){
             ModuleState mA_state = g_vision_rt_manager->GetModuleState("ModuleA");

@@ -19,6 +19,8 @@ set(OLD_GLOB
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleA/moduleA.h"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleTypes.h"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/GPSResource/GPSResource.h"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/SubsystemResource/SubsystemResource.h"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/utils/Logger.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -59,6 +61,8 @@ set(OLD_GLOB
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleA/moduleA.h"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleTypes.h"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/GPSResource/GPSResource.h"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/SubsystemResource/SubsystemResource.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -88,6 +92,8 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "V:/Products/VisionSDK/ModuleD
 set(OLD_GLOB
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleA/moduleA.h"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/GPSResource/GPSResource.h"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/SubsystemResource/SubsystemResource.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -111,6 +117,8 @@ set(OLD_GLOB
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/main.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -125,6 +133,8 @@ set(OLD_GLOB
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt_module.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -137,6 +147,8 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "V:/Products/VisionSDK/ModuleD
 set(OLD_GLOB
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

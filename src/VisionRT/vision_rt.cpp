@@ -927,3 +927,12 @@ void VisionRT::NotifyWorkspaceUpdateSubscribers(const WorkspaceKey& key, const W
         }
     }
 }
+std::shared_ptr<VisionRT_Module> VisionRT::GetModule(const ModuleID& id) const {
+    std::lock_guard<std::recursive_mutex> lock(_module_registry_mutex);
+    auto it = _module_registry.find(id);
+    if (it != _module_registry.end()) {
+        return it->second.module_ptr;
+    }
+    SystemLogger::warning("VisionRT", "GetModule: Module with ID '" + id + "' not found.");
+    return nullptr;
+}

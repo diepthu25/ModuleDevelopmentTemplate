@@ -97,6 +97,70 @@ public:
 };
 
 
+
+
+
+template<typename T>
+std::shared_ptr<T> VisionRT_Module::RequestResource(const ResourceName& name) {
+    if (_vision_rt_manager) {
+        return _vision_rt_manager->RequestResource<T>(name);
+    }
+    LogE("VisionRT manager not set, cannot request resource: " + name);
+    return nullptr;
+}
+
+template<typename T>
+std::shared_ptr<T> VisionRT_Module::WaitForResource(const ResourceName& name, std::chrono::milliseconds timeout) {
+    if (!_vision_rt_manager) {
+        LogE("VisionRT manager not set, cannot wait for resource: " + name);
+        return nullptr;
+    }
+    std::any resource_any = _vision_rt_manager->WaitForResource(name, timeout);
+    if (resource_any.has_value()) {
+        try {
+            return std::any_cast<std::shared_ptr<T>>(resource_any);
+        } catch (const std::bad_any_cast& e) {
+            LogE("Type mismatch for waited resource '" + name + "'. Expected std::shared_ptr<" + typeid(T).name() +
+                 ">, Got: " + resource_any.type().name() + ". Details: " + e.what());
+            return nullptr;
+        }
+    }
+    return nullptr; // Timeout or resource not found
+}
+
+template<typename T>
+bool VisionRT_Module::SubscribeToResource(const ResourceName& name, 
+                                          std::function<void(const ResourceName&, std::shared_ptr<T>)> typed_callback) {
+    if (!_vision_rt_manager) {
+        LogE("VisionRT manager not set, cannot subscribe to resource: " + name);
+        return false;
+    }
+    if (!typed_callback) {
+        LogE("SubscribeToResource: Null typed_callback provided for resource '" + name + "'.");
+        return false;
+    }
+    // Create a raw callback that wraps the typed_callback
+    ResourceEventCallbackRaw raw_cb = 
+        [this, name, typed_callback_captured = std::move(typed_callback)] 
+        (const ResourceName& res_name_from_rt, const std::any& resource_any) {
+        // 'this' capture is for LogE, use res_name_from_rt for consistency
+        if (resource_any.has_value()) {
+            try {
+                std::shared_ptr<T> typed_res = std::any_cast<std::shared_ptr<T>>(resource_any);
+                typed_callback_captured(res_name_from_rt, typed_res);
+            } catch (const std::bad_any_cast& e) {
+                // Log from module context
+                this->LogE("Type mismatch in resource subscription for '" + res_name_from_rt + "'. Expected std::shared_ptr<" + typeid(T).name() +
+                     ">, Got: " + resource_any.type().name() + ". Details: " + e.what());
+            }
+        } else {
+            // This case (empty any) shouldn't happen if VisionRT always passes a valid 'any' on registration.
+            this->LogW("Received notification for resource '" + res_name_from_rt + "' but std::any has no value.");
+        }
+    };
+    return _vision_rt_manager->SubscribeToResourceRegistration(name, _id, std::move(raw_cb));
+}
+
 template<typename T>
 bool VisionRT_Module::PublishToWorkspace(const WorkspaceKey& key, std::shared_ptr<T> data_to_publish) {
     if (_vision_rt_manager) {
@@ -106,7 +170,6 @@ bool VisionRT_Module::PublishToWorkspace(const WorkspaceKey& key, std::shared_pt
     LogE("VisionRT manager not set, cannot publish to workspace key: " + key);
     return false;
 }
-
 
 template<typename T>
 std::shared_ptr<T> VisionRT_Module::GetFromWorkspace(
@@ -131,7 +194,6 @@ std::shared_ptr<T> VisionRT_Module::GetFromWorkspace(
     out_timestamp = {};
     return nullptr;
 }
-
 
 template<typename T>
 std::shared_ptr<T> VisionRT_Module::WaitForWorkspaceData(
@@ -200,66 +262,11 @@ bool VisionRT_Module::SubscribeToWorkspaceData(
     return _vision_rt_manager->SubscribeToWorkspaceKey(key, _id, std::move(raw_cb));
 }
 
-template<typename T>
-std::shared_ptr<T> VisionRT_Module::RequestResource(const ResourceName& name) {
-    if (_vision_rt_manager) {
-        return _vision_rt_manager->RequestResource<T>(name);
-    }
-    LogE("VisionRT manager not set, cannot request resource: " + name);
-    return nullptr;
-}
-
-template<typename T>
-std::shared_ptr<T> VisionRT_Module::WaitForResource(const ResourceName& name, std::chrono::milliseconds timeout) {
-    if (!_vision_rt_manager) {
-        LogE("VisionRT manager not set, cannot wait for resource: " + name);
-        return nullptr;
-    }
-    std::any resource_any = _vision_rt_manager->WaitForResource(name, timeout);
-    if (resource_any.has_value()) {
-        try {
-            return std::any_cast<std::shared_ptr<T>>(resource_any);
-        } catch (const std::bad_any_cast& e) {
-            LogE("Type mismatch for waited resource '" + name + "'. Expected std::shared_ptr<" + typeid(T).name() +
-                 ">, Got: " + resource_any.type().name() + ". Details: " + e.what());
-            return nullptr;
-        }
-    }
-    return nullptr; // Timeout or resource not found
-}
-
-template<typename T>
-bool VisionRT_Module::SubscribeToResource(const ResourceName& name, 
-                                          std::function<void(const ResourceName&, std::shared_ptr<T>)> typed_callback) {
-    if (!_vision_rt_manager) {
-        LogE("VisionRT manager not set, cannot subscribe to resource: " + name);
-        return false;
-    }
-    if (!typed_callback) {
-        LogE("SubscribeToResource: Null typed_callback provided for resource '" + name + "'.");
-        return false;
-    }
-
-    // Create a raw callback that wraps the typed_callback
-    ResourceEventCallbackRaw raw_cb = 
-        [this, name, typed_callback_captured = std::move(typed_callback)] 
-        (const ResourceName& res_name_from_rt, const std::any& resource_any) {
-        // 'this' capture is for LogE, use res_name_from_rt for consistency
-        if (resource_any.has_value()) {
-            try {
-                std::shared_ptr<T> typed_res = std::any_cast<std::shared_ptr<T>>(resource_any);
-                typed_callback_captured(res_name_from_rt, typed_res);
-            } catch (const std::bad_any_cast& e) {
-                // Log from module context
-                this->LogE("Type mismatch in resource subscription for '" + res_name_from_rt + "'. Expected std::shared_ptr<" + typeid(T).name() +
-                     ">, Got: " + resource_any.type().name() + ". Details: " + e.what());
-            }
-        } else {
-            // This case (empty any) shouldn't happen if VisionRT always passes a valid 'any' on registration.
-            this->LogW("Received notification for resource '" + res_name_from_rt + "' but std::any has no value.");
-        }
-    };
-    return _vision_rt_manager->SubscribeToResourceRegistration(name, _id, std::move(raw_cb));
-}
 
 #endif // VISION_RT_MODULE_H
+
+// --- Template member function definitions ---
+
+// RequestResource
+
+

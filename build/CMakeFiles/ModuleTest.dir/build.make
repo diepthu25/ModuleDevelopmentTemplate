@@ -147,11 +147,41 @@ CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj: CMakeFiles/ModuleTest.dir/flags.make
+CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj: CMakeFiles/ModuleTest.dir/includes_CXX.rsp
+CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj: V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp
+CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj: CMakeFiles/ModuleTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj"
+	"C:/Program Files/LLVM/bin/clang++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj -MF CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj.d -o CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp
+
+CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_ASSEMBLY_SOURCE
+
+CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj: CMakeFiles/ModuleTest.dir/flags.make
+CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj: CMakeFiles/ModuleTest.dir/includes_CXX.rsp
+CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj: V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp
+CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj: CMakeFiles/ModuleTest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj"
+	"C:/Program Files/LLVM/bin/clang++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj -MF CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj.d -o CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp
+
+CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj: CMakeFiles/ModuleTest.dir/flags.make
 CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj: CMakeFiles/ModuleTest.dir/includes_CXX.rsp
 CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj: V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp
 CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj: CMakeFiles/ModuleTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj"
 	"C:/Program Files/LLVM/bin/clang++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj -MF CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj.d -o CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp
 
 CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.i: cmake_force
@@ -169,6 +199,8 @@ ModuleTest_OBJECTS = \
 "CMakeFiles/ModuleTest.dir/src/main.cpp.obj" \
 "CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj" \
 "CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj" \
+"CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj" \
+"CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj" \
 "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj"
 
 # External object files for target ModuleTest
@@ -179,11 +211,13 @@ ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt_module.cpp.obj
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/main.cpp.obj
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj
+ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj
+ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/build.make
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/linkLibs.rsp
 ModuleTest.exe: CMakeFiles/ModuleTest.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ModuleTest.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ModuleTest.exe"
 	"C:/Program Files/LLVM/bin/clang++.exe" -nostartfiles -nostdlib -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console -fuse-ld=lld-link @CMakeFiles/ModuleTest.dir/objects1.rsp -o ModuleTest.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:ModuleTest.lib -Xlinker /pdb:V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/ModuleTest.pdb -Xlinker /version:0.0  @CMakeFiles/ModuleTest.dir/linkLibs.rsp
 
 # Rule to build all files generated by this target.

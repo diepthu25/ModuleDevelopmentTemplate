@@ -19,6 +19,7 @@ public:
     VisionRT();
     ~VisionRT();
 
+    std::shared_ptr<VisionRT_Module> GetModule(const ModuleID& id) const; 
     bool RegisterModule(std::shared_ptr<VisionRT_Module> module);
     bool UnregisterModule(const ModuleID& id);
     bool InvokeModule(const ModuleID& id);

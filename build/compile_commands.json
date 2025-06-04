@@ -31,6 +31,18 @@
 },
 {
   "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp",
+  "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp",
+  "output": "CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj"
+},
+{
+  "directory": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/build",
   "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"  @CMakeFiles/ModuleTest.dir/includes_CXX.rsp -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=gnu++17 -o CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj -c V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp",
   "file": "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp",
   "output": "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj"

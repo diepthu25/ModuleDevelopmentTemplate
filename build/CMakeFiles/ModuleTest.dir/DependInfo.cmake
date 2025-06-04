@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/main.cpp" "CMakeFiles/ModuleTest.dir/src/main.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/main.cpp.obj.d"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp" "CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj.d"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp" "CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj.d"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp" "CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj.d"
+  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp" "CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj.d"
   "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp" "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj.d"
   )
 

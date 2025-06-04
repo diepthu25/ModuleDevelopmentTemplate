@@ -153,3 +153,96 @@
 [2025-05-22 12:36:49.845] [INFO] [MainApp] Exiting.
 [2025-05-22 12:36:49.845] [INFO] [ModuleB] ModuleB destructed.
 [2025-05-22 12:36:49.845] [INFO] [ModuleA] ModuleA destructed.
+[2025-06-04 12:23:55.929] [INFO] [Logger] SystemLogger initialized. Logging to: modules_test.log
+[2025-06-04 12:23:55.935] [INFO] [MainApp] Application starting...
+[2025-06-04 12:23:55.935] [INFO] [VisionRT] VisionRT Manager instance created.
+[2025-06-04 12:23:55.935] [INFO] [ModuleA] ModuleA constructed.
+[2025-06-04 12:23:55.936] [INFO] [ModuleB] ModuleB constructed.
+[2025-06-04 12:23:55.936] [INFO] [MainApp] All module loaded. Pending registration.
+[2025-06-04 12:23:55.936] [INFO] [VisionRT] Module 'ModuleA' registered successfully.
+[2025-06-04 12:23:55.936] [INFO] [MainApp] ModuleA registered successfully.
+[2025-06-04 12:23:55.936] [INFO] [VisionRT] Module 'ModuleB' registered successfully.
+[2025-06-04 12:23:55.936] [INFO] [MainApp] ModuleB registered successfully.
+[2025-06-04 12:24:01.137] [INFO] [VisionRT] Resource 'input' registered (type: class std::shared_ptr<struct SimpleResource>).
+[2025-06-04 12:24:01.137] [INFO] [MainApp] Resource 'input' registered successfully.
+[2025-06-04 12:24:01.138] [INFO] [VisionRT] Module 'ModuleA' invoked. Thread launched.
+[2025-06-04 12:24:01.138] [INFO] [MainApp] ModuleA invoked successfully.
+[2025-06-04 12:24:01.138] [INFO] [VisionRT] Module 'ModuleB' invoked. Thread launched.
+[2025-06-04 12:24:01.138] [INFO] [MainApp] ModuleA invoked successfully.
+[2025-06-04 12:24:01.139] [INFO] [VisionRT] Module 'ModuleA' thread started. Calling Setup().
+[2025-06-04 12:24:01.139] [INFO] [VisionRT] Module 'ModuleB' thread started. Calling Setup().
+[2025-06-04 12:24:01.139] [INFO] [ModuleB] Setup method called. Initializing...
+[2025-06-04 12:24:01.139] [INFO] [ModuleB] Setup complete.
+[2025-06-04 12:24:01.140] [INFO] [ModuleA] Setup method called. Initializing...
+[2025-06-04 12:24:01.140] [INFO] [ModuleA] Setup complete.
+[2025-06-04 12:24:01.140] [INFO] [VisionRT] Module 'ModuleA' Setup() successful. Starting Loop().
+[2025-06-04 12:24:01.140] [INFO] [VisionRT] Module 'ModuleB' Setup() successful. Starting Loop().
+[2025-06-04 12:24:01.140] [INFO] [ModuleA] Resource acquired. a: 20, b: 12
+[2025-06-04 12:24:01.140] [ERROR] [ModuleB] Failed to get result from workspace. Waiting for data...
+[2025-06-04 12:24:01.141] [INFO] [ModuleA] Calculated c: 32
+[2025-06-04 12:24:01.141] [ERROR] [ModuleB] Failed to get result from workspace. Waiting for data...
+[2025-06-04 12:24:01.141] [INFO] [ModuleA] Published result to workspace.
+[2025-06-04 12:24:01.141] [INFO] [ModuleB] Result from workspace: 32
+[2025-06-04 12:24:01.141] [INFO] [VisionRT] Module 'ModuleB' Loop() finished or stop signaled.
+[2025-06-04 12:24:01.142] [INFO] [VisionRT] Module 'ModuleA' Loop() finished or stop signaled.
+[2025-06-04 12:24:01.142] [INFO] [ModuleB] Exit method called. Cleaning up...
+[2025-06-04 12:24:01.142] [INFO] [ModuleB] Exit complete.
+[2025-06-04 12:24:01.142] [INFO] [ModuleA] Exit method called. Cleaning up...
+[2025-06-04 12:24:01.142] [INFO] [ModuleA] Exit complete.
+[2025-06-04 12:24:01.142] [INFO] [VisionRT] Module 'ModuleB' Exit() called. Thread finishing.
+[2025-06-04 12:24:01.143] [INFO] [VisionRT] Module 'ModuleA' Exit() called. Thread finishing.
+[2025-06-04 12:24:01.351] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:01.351] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:01.553] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:01.553] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:01.757] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:01.757] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:01.970] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:01.971] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:02.172] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:02.172] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:02.375] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:02.375] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:02.579] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:02.579] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:02.795] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:02.795] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:02.996] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:02.996] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:03.199] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:03.199] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:03.401] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:03.401] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:03.440] [INFO] [MainApp] Interrupt signal (2) received. Setting shutdown flag.
+[2025-06-04 12:24:03.607] [INFO] [MainApp] ModuleA is STOPPED.
+[2025-06-04 12:24:03.619] [INFO] [MainApp] ModuleB is STOPPED.
+[2025-06-04 12:24:03.619] [INFO] [MainApp] Main loop exited. Initiating full system shutdown...
+[2025-06-04 12:24:03.620] [INFO] [MainApp] Phase 1: Signaling all active modules to stop.
+[2025-06-04 12:24:03.620] [INFO] [MainApp] Module 'ModuleA' already in a terminal/idle state: STOPPED
+[2025-06-04 12:24:03.620] [INFO] [MainApp] Module 'ModuleB' already in a terminal/idle state: STOPPED
+[2025-06-04 12:24:03.620] [INFO] [MainApp] Waiting a short period for modules to process stop signals (e.g., 1 second)...
+[2025-06-04 12:24:04.627] [INFO] [MainApp] Phase 2: Joining threads and unregistering modules.
+[2025-06-04 12:24:04.627] [INFO] [MainApp] Module 'ModuleA' is being shut down by main application. Initiating cleanup.
+[2025-06-04 12:24:04.628] [INFO] [VisionRT] Module 'ModuleA' is already in a non-running or non-startable state (7).
+[2025-06-04 12:24:04.628] [INFO] [VisionRT] Waiting for module 'ModuleA' thread to join...
+[2025-06-04 12:24:04.628] [INFO] [VisionRT] Module 'ModuleA' thread joined.
+[2025-06-04 12:24:04.628] [INFO] [VisionRT] Module 'ModuleA' unregistered from module registry.
+[2025-06-04 12:24:04.628] [INFO] [VisionRT] Cleaned up event subscriptions for module 'ModuleA'.
+[2025-06-04 12:24:04.628] [INFO] [MainApp] Module 'ModuleA' cleanup complete.
+[2025-06-04 12:24:04.629] [INFO] [MainApp] Module 'ModuleB' is being shut down by main application. Initiating cleanup.
+[2025-06-04 12:24:04.629] [INFO] [VisionRT] Module 'ModuleB' is already in a non-running or non-startable state (7).
+[2025-06-04 12:24:04.629] [INFO] [VisionRT] Waiting for module 'ModuleB' thread to join...
+[2025-06-04 12:24:04.629] [INFO] [VisionRT] Module 'ModuleB' thread joined.
+[2025-06-04 12:24:04.629] [INFO] [VisionRT] Module 'ModuleB' unregistered from module registry.
+[2025-06-04 12:24:04.630] [INFO] [VisionRT] Cleaned up event subscriptions for module 'ModuleB'.
+[2025-06-04 12:24:04.630] [INFO] [MainApp] Module 'ModuleB' cleanup complete.
+[2025-06-04 12:24:04.630] [INFO] [MainApp] Unregistering resources...
+[2025-06-04 12:24:04.630] [WARNING] [VisionRT] Attempted to unregister non-existent resource: global_config
+[2025-06-04 12:24:04.630] [INFO] [MainApp] Application shutdown sequence complete. Releasing VisionRT manager.
+[2025-06-04 12:24:04.630] [INFO] [VisionRT] VisionRT Manager instance shutting down...
+[2025-06-04 12:24:04.630] [INFO] [VisionRT] Entire workspace cleared, including event subscriptions and wait contexts.
+[2025-06-04 12:24:04.631] [INFO] [VisionRT] All resources cleared.
+[2025-06-04 12:24:04.631] [INFO] [VisionRT] VisionRT Manager shutdown complete.
+[2025-06-04 12:24:04.631] [INFO] [MainApp] Exiting.
+[2025-06-04 12:24:04.631] [INFO] [ModuleB] ModuleB destructed.
+[2025-06-04 12:24:04.631] [INFO] [ModuleA] ModuleA destructed.

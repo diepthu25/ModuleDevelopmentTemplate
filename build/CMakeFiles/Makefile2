@@ -85,12 +85,12 @@ clean: CMakeFiles/ModuleTest.dir/clean
 CMakeFiles/ModuleTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ModuleTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target ModuleTest"
 .PHONY : CMakeFiles/ModuleTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ModuleTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ModuleTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles 0
 .PHONY : CMakeFiles/ModuleTest.dir/rule
@@ -102,7 +102,7 @@ ModuleTest: CMakeFiles/ModuleTest.dir/rule
 # codegen rule for target.
 CMakeFiles/ModuleTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ModuleTest.dir/build.make CMakeFiles/ModuleTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target ModuleTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target ModuleTest"
 .PHONY : CMakeFiles/ModuleTest.dir/codegen
 
 # clean rule for target.

@@ -23,12 +23,16 @@ bool ModuleA::Loop(){
     // Put main loop code here
     // For example, process data, handle events, etc.    
     // Code in this method should be non-blocking and return true to continue running.
-    
+    // a + b
     // Here we will request the SimpleResource to calculate a+b then publish c to workspace
+    // RequestResource<data_type>("...")
     auto resource = RequestResource<SimpleResource>("input");
     if (resource) {
         LogI("Resource acquired. a: " + std::to_string(resource->a) + ", b: " + std::to_string(resource->b));
+        
         int c = resource->a + resource->b;
+        // pointer 
+
         LogI("Calculated c: " + std::to_string(c));
 
         // Publish the result to workspace

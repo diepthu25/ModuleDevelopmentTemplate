@@ -16,6 +16,8 @@
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleA/moduleA.h",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleTypes.h",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/GPSResource/GPSResource.h",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/SubsystemResource/SubsystemResource.h",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/utils/Logger.h"
 			],
 			"recurse" : true
@@ -41,7 +43,9 @@
 			[
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleA/moduleA.h",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h",
-				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleTypes.h"
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleTypes.h",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/GPSResource/GPSResource.h",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/SubsystemResource/SubsystemResource.h"
 			],
 			"recurse" : true
 		},
@@ -60,7 +64,9 @@
 			"paths" : 
 			[
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleA/moduleA.h",
-				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h"
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/ModuleB/moduleB.h",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/GPSResource/GPSResource.h",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/include/modules/Resources/SubsystemResource/SubsystemResource.h"
 			],
 			"recurse" : true
 		},
@@ -78,6 +84,8 @@
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/main.cpp",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp"
 			],
 			"recurse" : true
@@ -90,6 +98,8 @@
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt_module.cpp",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp",
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp"
 			],
 			"recurse" : true
@@ -99,7 +109,9 @@
 			"paths" : 
 			[
 				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp",
-				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp"
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp",
+				"V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp"
 			],
 			"recurse" : true
 		},
