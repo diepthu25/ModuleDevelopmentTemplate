@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

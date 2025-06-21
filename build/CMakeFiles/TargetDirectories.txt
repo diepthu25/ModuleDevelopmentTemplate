@@ -1,3 +1,3 @@
-V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir
-V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles/edit_cache.dir
-V:/Products/VisionSDK/ModuleDevelopmentTemplate/build/CMakeFiles/rebuild_cache.dir
+/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/rebuild_cache.dir
+/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/edit_cache.dir
+/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir

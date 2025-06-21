@@ -1,29 +1,29 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/workspaces/ModuleDevelopmentTemplate/src/VisionRT/vision_rt.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/VisionRT/vision_rt_module.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt_module.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/main.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/main.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/modules/ModuleLLM/LLM.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/modules/ModuleLLM/LLM.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.o"
+  "/workspaces/ModuleDevelopmentTemplate/src/utils/Logger.cpp" "/workspaces/ModuleDevelopmentTemplate/build/CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
+  "../include/modules"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt.cpp" "CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/VisionRT/vision_rt_module.cpp" "CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt_module.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/VisionRT/vision_rt_module.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/main.cpp" "CMakeFiles/ModuleTest.dir/src/main.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/main.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleA/moduleA.cpp" "CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/ModuleA/moduleA.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/ModuleB/moduleB.cpp" "CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/ModuleB/moduleB.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/GPSResource/GPSResource.cpp" "CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/Resources/GPSResource/GPSResource.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/modules/Resources/SubsystemResource/SubsystemResource.cpp" "CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/modules/Resources/SubsystemResource/SubsystemResource.cpp.obj.d"
-  "V:/Products/VisionSDK/ModuleDevelopmentTemplate/src/utils/Logger.cpp" "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj" "gcc" "CMakeFiles/ModuleTest.dir/src/utils/Logger.cpp.obj.d"
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

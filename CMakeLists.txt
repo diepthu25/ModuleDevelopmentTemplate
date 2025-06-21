@@ -8,6 +8,12 @@ project(ModuleTest LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Threads
+find_package(Threads REQUIRED)
+if(NOT Threads_FOUND)
+    message(FATAL_ERROR "VisionSDK: Threads (pthreads) not found!")
+endif()
+
 # Collect all source files recursively in src/ and include/
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
@@ -40,7 +46,10 @@ target_include_directories(ModuleTest PRIVATE
 )
 
 # Link against any necessary libraries (adjust as needed)
-# target_link_libraries(ModuleTest PRIVATE SomeLibrary)
+target_link_libraries(ModuleTest PRIVATE         
+                        #for pthreads
+                        Threads::Threads
+                        )
 
 # Additional flags (optional)
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
